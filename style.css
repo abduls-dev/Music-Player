@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: "Roboto", sans-serif;
+}
+
+.player {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.cover img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.details h2,
+.details h3 {
+  color: #fff;
+}
+
+.details h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.details h3 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.progress-container {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  height: 5px;
+  width: 100%;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.progress {
+  background: #fff;
+  height: 100%;
+  width: 0;
+  border-radius: 5px;
+  transition: width 0.1s linear;
+}
+
+.time,
+.volume {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.volume input {
+  width: 100px;
+  margin: 0 10px;
+}
